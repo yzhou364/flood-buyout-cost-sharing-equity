@@ -256,10 +256,17 @@ def figure_3_regional_heterogeneity(results: dict, save_path: Path = None):
     ax1.set_title('(a) Property Values', fontsize=12, fontweight='bold')
     ax1.invert_yaxis()
 
-    # Add value labels
+    # Add value labels - position inside for long bars, outside for short bars
+    max_val = values.max()
     for bar, val in zip(bars, values):
-        ax1.text(val + 20, bar.get_y() + bar.get_height()/2,
-                 f'${val:.0f}K', va='center', fontsize=8)
+        if val > max_val * 0.7:  # For very long bars (like Lower Manhattan), put label inside
+            ax1.text(val - max_val * 0.05, bar.get_y() + bar.get_height()/2,
+                     f'${val:.0f}K', va='center', ha='right', fontsize=8, color='white', fontweight='bold')
+        else:  # For shorter bars, put label outside
+            ax1.text(val + max_val * 0.02, bar.get_y() + bar.get_height()/2,
+                     f'${val:.0f}K', va='center', fontsize=8)
+    # Extend x-axis slightly to accommodate labels
+    ax1.set_xlim(0, max_val * 1.08)
 
     # Panel B: Low-Income Population
     ax2 = fig.add_subplot(gs[0, 1])
@@ -492,9 +499,9 @@ def figure_6_game_structure(save_path: Path = None):
 
     Conceptual diagram of the game-theoretic model.
     """
-    fig, ax = plt.subplots(figsize=(10, 7))
-    ax.set_xlim(0, 10)
-    ax.set_ylim(0, 8)
+    fig, ax = plt.subplots(figsize=(12, 8))
+    ax.set_xlim(-1, 11)
+    ax.set_ylim(-0.5, 8.5)
     ax.axis('off')
 
     # Level 1: Federal Government
@@ -555,22 +562,22 @@ def figure_6_game_structure(save_path: Path = None):
                 fontsize=8, fontweight='bold', color='white')
 
     # Decision variables for homeowners
-    ax.text(5, 1.1, r'Choose: $k_h^*$ (optimal relocation year)',
+    ax.text(5, 0.9, r'Choose: $k_h^*$ (optimal relocation year)',
             ha='center', va='center', fontsize=10, style='italic')
 
-    # Title and annotations
-    ax.text(5, 7.8, 'Three-Level Stochastic Stackelberg Game',
+    # Title
+    ax.text(5, 8.2, 'Three-Level Stochastic Stackelberg Game',
             ha='center', va='center', fontsize=14, fontweight='bold')
 
-    # Key differences annotation
-    ax.text(0.3, 1.9, 'Discount rate:\nLow: ~20%\nHigh: ~10%',
-            ha='left', va='center', fontsize=9,
-            bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.5))
+    # Key differences annotation - moved to bottom left corner, outside main diagram
+    ax.text(-0.5, 0.2, 'Discount rate:\nLow-income: ~18%\nHigh-income: ~12%',
+            ha='left', va='bottom', fontsize=9,
+            bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.7, edgecolor='gray'))
 
-    # Climate uncertainty annotation
-    ax.text(9.7, 5, 'Climate\nUncertainty\n(RCP scenarios)',
-            ha='right', va='center', fontsize=9,
-            bbox=dict(boxstyle='round', facecolor='lightblue', alpha=0.5))
+    # Climate uncertainty annotation - moved to top right corner, outside main diagram
+    ax.text(10.5, 7.5, 'Climate\nUncertainty\n(RCP scenarios)',
+            ha='right', va='top', fontsize=9,
+            bbox=dict(boxstyle='round', facecolor='lightblue', alpha=0.7, edgecolor='gray'))
 
     plt.tight_layout()
 

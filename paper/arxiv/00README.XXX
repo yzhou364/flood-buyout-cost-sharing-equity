@@ -8,15 +8,16 @@ Compilation:
 The bibliography is embedded directly in main.tex (no separate .bib file needed).
 
 Files included:
-  main.tex                           - Main LaTeX source (self-contained)
-  figures/fig1_equity_vs_alpha.pdf   - Figure 1
-  figures/fig2_relocation_by_income.pdf - Figure 2
-  figures/fig3_regional_heterogeneity.pdf - Figure 3
-  figures/fig4_policy_comparison.pdf - Figure 4
-  figures/fig6_game_structure.pdf    - Figure 5 (game structure)
+  main.tex                             - Main LaTeX source (self-contained)
+  figures/fig1_equity_vs_alpha.pdf     - Figure 1: Equity vs federal cost-share
+  figures/fig2_relocation_by_income.pdf - Figure 2: Relocations by income group
+  figures/fig3_regional_heterogeneity.pdf - Figure 3: Regional heterogeneity
+  figures/fig4_policy_comparison.pdf   - Figure 4: Policy alternatives comparison
+  figures/fig6_game_structure.pdf      - Figure 5: Game structure diagram
 
 Required packages (all standard in TeX Live):
   amsmath, amssymb, amsthm, graphicx, booktabs, natbib, geometry,
-  hyperref, xcolor, float, subcaption, setspace, mathptmx
+  hyperref, xcolor, float, subcaption, setspace, mathptmx, algorithm,
+  algpseudocode
 
-Recommended TeX Live version: 2023 or 2025
+Recommended TeX Live version: 2023 or later

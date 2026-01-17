@@ -20,6 +20,8 @@
 \usepackage{float}
 \usepackage{subcaption}
 \usepackage{setspace}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
 
 \hypersetup{
     colorlinks=true,
@@ -47,9 +49,9 @@
 \title{\Large\textbf{Equity Implications of Federal--Local Cost-Sharing in Flood Buyouts: A Game-Theoretic Analysis with Heterogeneous Homeowners}}
 
 \author{
-Author Name$^{1,*}$\\[0.5em]
-\small $^1$Department of Economics, University Name, City, Country\\
-\small $^*$Corresponding author: email@university.edu
+Yuqun Zhou\\[0.5em]
+\small Department of Industrial and Systems Engineering, University of Wisconsin--Madison, Madison, WI, USA\\
+\small Email: yzhou364@wisc.edu
 }
 
 \date{\today}
@@ -82,7 +84,7 @@ Climate-driven flood risk increasingly necessitates managed retreat through gove
 
 Managed retreat through property buyouts has emerged as a critical climate adaptation strategy as flood risk intensifies across the United States~\cite{siders2019strategic, mach2019managed}. The Federal Emergency Management Agency (FEMA) administers primary buyout programmes through the Hazard Mitigation Grant Program (HMGP) and Building Resilient Infrastructure and Communities (BRIC) initiative, which typically operate on a 75/25 federal--local cost-sharing basis. However, mounting empirical evidence reveals troubling disparities: Elliott et al.~\cite{elliott2021racial} documented that buyout funding disproportionately flows to wealthier, white communities, while Greer and Binder~\cite{greer2021political} found systematic barriers facing low-income participants.
 
-These disparities likely emerge from incentive structures embedded within cost-sharing arrangements, yet existing theoretical frameworks inadequately capture the multi-level strategic dynamics at play. The foundational game-theoretic model of Bier et al.~\cite{bier2019game} treats government as a unified decision-maker, abstracting away from the divergent objectives between federal and local authorities that may drive observed inequities. Local governments facing a 25\% cost share confront competing pressures: reducing disaster exposure through buyouts versus preserving property tax revenue and maintaining community stability.
+These disparities likely emerge from incentive structures embedded within cost-sharing arrangements, yet existing theoretical frameworks inadequately capture the multi-level strategic dynamics at play. The foundational game-theoretic model of Bier et al.~\cite{bier2019game} treats government as a unified decision-maker, abstracting away from the divergent objectives between federal and local authorities that may drive observed inequities. Subsequent work has extended these foundations: Zhou~\cite{zhou2022predisaster} developed agent-based models to capture resident heterogeneity and network effects in relocation decisions, while Zhou and Cen~\cite{zhou2025stochastic} integrated stochastic programming with machine learning to enhance predictive accuracy for subsidy impacts. Local governments facing a 25\% cost share confront competing pressures: reducing disaster exposure through buyouts versus preserving property tax revenue and maintaining community stability.
 
 We address this gap by developing a three-level stochastic Stackelberg game that explicitly models strategic interactions among federal government, local governments, and heterogeneous homeowners under climate uncertainty. The federal government acts as Stackelberg leader, setting cost-sharing parameters that shape local government participation decisions and, ultimately, which households receive buyout offers. Our framework identifies three distinct channels through which current policy generates inequitable outcomes and evaluates alternative mechanisms for improving distributional outcomes.
 
@@ -221,17 +223,17 @@ We solve the three-level game through backward induction on a discrete grid. For
 
 \subsection{Data Availability}
 
-Simulation code and parameter files are available at \url{https://github.com/[repository]}. Regional population parameters derive from publicly available sources: FEMA flood maps, Census Bureau income data, PropertyShark/Zillow property values, and NOAA sea-level rise projections.
+Simulation code and parameter files are available at \url{https://github.com/yzhou364/Equity-Implications-of-Federal-Local-Cost-sharing-in-Flood-Buyouts}. Regional population parameters derive from publicly available sources: FEMA flood maps, Census Bureau income data, PropertyShark/Zillow property values, and NOAA sea-level rise projections.
 
 % ============================================================================
 % ACKNOWLEDGEMENTS
 % ============================================================================
 
 \section*{Acknowledgements}
-[Acknowledgements text to be added]
+The author thanks Vicki M.\ Bier for valuable discussions and feedback on earlier versions of this work.
 
 \section*{Author Contributions}
-[Author contributions to be added]
+Y.Z.\ conceived and designed the study, developed the theoretical model, conducted the numerical analysis, and wrote the manuscript.
 
 \section*{Competing Interests}
 The authors declare no competing interests.
@@ -240,7 +242,7 @@ The authors declare no competing interests.
 % REFERENCES (embedded .bbl for arXiv)
 % ============================================================================
 
-\begin{thebibliography}{17}
+\begin{thebibliography}{19}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -372,6 +374,18 @@ Oliver E.~J. Wing, Paul~D. Bates, Andrew~M. Smith, Christopher~C. Sampson,
   034023, 2018.
 \newblock \doi{10.1088/1748-9326/aaac65}.
 
+\bibitem[Zhou(2022)]{zhou2022predisaster}
+Yuqun Zhou.
+\newblock Pre-disaster relocation and agent-based model for flood disaster.
+\newblock PhD thesis, The University of Wisconsin--Madison, 2022.
+
+\bibitem[Zhou and Cen(2025)]{zhou2025stochastic}
+Yuqun Zhou and Zuen Cen.
+\newblock Integrating stochastic programming and machine learning for enhanced
+  pre-disaster relocation planning.
+\newblock \emph{Academic Journal of Natural Science}, 2\penalty0 (1):\penalty0
+  7--11, 2025.
+
 \end{thebibliography}
 
 % ============================================================================
@@ -450,34 +464,36 @@ We establish existence through backward induction:
 \section{Solution Algorithm}
 \label{app:algorithm}
 
-\begin{algorithm}
-\caption{Backward Induction Solution}
+\begin{algorithm}[H]
+\caption{Backward Induction Solution for Three-Level Stackelberg Game}
 \begin{algorithmic}[1]
-\REQUIRE Federal policy $(\alpha, \bar{S})$, household parameters, climate scenarios
-\ENSURE Equilibrium outcomes
-
-\STATE \textbf{Stage 3: Household Decisions}
-\FOR{each household $h$}
-    \FOR{each subsidy level $S \in \{0, \Delta S, 2\Delta S, \ldots, \bar{S}\}$}
-        \STATE Compute optimal relocation year $k_h^*(S)$ using Theorem 1
-    \ENDFOR
-\ENDFOR
-
-\STATE \textbf{Stage 2: Local Government Optimization}
-\FOR{each jurisdiction $j$}
-    \STATE Initialize: $S_j^{\text{best}} \leftarrow 0$, $C_j^{\text{best}} \leftarrow \infty$
-    \FOR{each $S_j \in \{0, \Delta S, \ldots, \bar{S}\}$}
-        \STATE Compute $N_j^{\text{rel}}(S_j) = \sum_{h \in j} \mathbf{1}[k_h^*(S_j) \leq T]$
-        \STATE Compute total cost $C_j(S_j)$
-        \IF{$C_j(S_j) < C_j^{\text{best}}$}
-            \STATE $S_j^{\text{best}} \leftarrow S_j$, $C_j^{\text{best}} \leftarrow C_j(S_j)$
-        \ENDIF
-    \ENDFOR
-\ENDFOR
-
-\STATE \textbf{Aggregate Outcomes}
-\STATE Compute total federal cost, relocations by income group, RRG
-\RETURN Equilibrium outcomes
+\Require Federal policy $(\alpha, \bar{S})$, household parameters $\{(V_h, r_h, \ell_h)\}$, climate scenarios $\Omega$
+\Ensure Equilibrium outcomes: subsidies $\{S_j^*\}$, relocations $\{N_j^{\text{rel}}\}$, RRG
+\Statex
+\Statex \textbf{Stage 3: Household Decisions}
+\For{each household $h = 1, \ldots, H$}
+    \For{each subsidy level $S \in \{0, \Delta S, 2\Delta S, \ldots, \bar{S}\}$}
+        \State Compute optimal relocation year $k_h^*(S)$ using Theorem 1
+    \EndFor
+\EndFor
+\Statex
+\Statex \textbf{Stage 2: Local Government Optimization}
+\For{each jurisdiction $j = 1, \ldots, J$}
+    \State $S_j^{\text{best}} \gets 0$; \quad $C_j^{\text{best}} \gets \infty$
+    \For{each $S_j \in \{0, \Delta S, \ldots, \bar{S}\}$}
+        \State $N_j^{\text{rel}}(S_j) \gets \sum_{h \in j} \mathbf{1}[k_h^*(S_j) \leq T]$
+        \State Compute total cost $C_j(S_j)$ per Equation (2)
+        \If{$C_j(S_j) < C_j^{\text{best}}$}
+            \State $S_j^{\text{best}} \gets S_j$; \quad $C_j^{\text{best}} \gets C_j(S_j)$
+        \EndIf
+    \EndFor
+\EndFor
+\Statex
+\Statex \textbf{Stage 1: Aggregate Outcomes}
+\State Compute total federal cost: $C^{\text{Fed}} \gets \sum_j \alpha \cdot S_j^{\text{best}} \cdot N_j^{\text{rel}}(S_j^{\text{best}})$
+\State Compute relocations by income group: $N^{\text{low}}, N^{\text{high}}$
+\State Compute relocation ratio gap: $\text{RRG} \gets (N^{\text{low}}/H^{\text{low}}) / (N^{\text{high}}/H^{\text{high}})$
+\State \Return $\{S_j^{\text{best}}\}, \{N_j^{\text{rel}}\}, C^{\text{Fed}}, \text{RRG}$
 \end{algorithmic}
 \end{algorithm}
 
@@ -493,15 +509,15 @@ We establish existence through backward induction:
 Region & Households & Mean Value & Low-Income & Flood Exp. & Mean Elev. \\
  & (N) & (\$000) & Share (\%) & (\%) & (m) \\
 \midrule
-Brooklyn & 5,200 & 785 & 42 & 35 & 3.2 \\
-Staten Island & 2,800 & 520 & 38 & 55 & 4.5 \\
-Queens & 4,100 & 680 & 35 & 40 & 3.8 \\
-Lower Manhattan & 1,850 & 1,850 & 15 & 65 & 2.1 \\
-Houston & 6,500 & 320 & 48 & 45 & 9.0 \\
-New Orleans & 4,200 & 285 & 62 & 75 & 0.5 \\
-Miami-Dade & 5,100 & 445 & 45 & 60 & 1.8 \\
-Charleston & 2,350 & 385 & 40 & 50 & 2.5 \\
-Norfolk & 2,393 & 245 & 52 & 55 & 2.0 \\
+Brooklyn & 5,200 & 650 & 45 & 35 & 2.0 \\
+Staten Island & 2,800 & 580 & 52 & 42 & 1.8 \\
+Queens & 4,100 & 520 & 58 & 65 & 1.5 \\
+Lower Manhattan & 1,850 & 1,850 & 15 & 45 & 2.0 \\
+Houston & 6,500 & 285 & 55 & 38 & 9.0 \\
+New Orleans & 4,200 & 265 & 62 & 75 & 0.5 \\
+Miami-Dade & 5,100 & 485 & 48 & 52 & 1.5 \\
+Charleston & 2,350 & 425 & 42 & 55 & 2.5 \\
+Norfolk & 2,393 & 245 & 50 & 48 & 1.5 \\
 \midrule
 \textbf{Total} & \textbf{34,493} & -- & -- & -- & -- \\
 \bottomrule
