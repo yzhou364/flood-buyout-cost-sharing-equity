@@ -1,0 +1,10 @@
+region,n_households,n_zip_codes,house_value_mean,pct_low_income,pct_in_100yr_floodplain,elevation_mean
+brooklyn_ny,1143,3,650000,0.45,0.35,2.0
+staten_island_ny,2850,6,580000,0.52,0.42,1.8
+queens_ny,3200,7,520000,0.58,0.65,1.5
+lower_manhattan_ny,1500,7,1850000,0.15,0.45,2.0
+houston_tx,8500,12,285000,0.55,0.38,9.0
+new_orleans_la,5400,12,265000,0.62,0.75,0.5
+miami_dade_fl,6200,12,485000,0.48,0.52,1.5
+charleston_sc,2600,7,425000,0.42,0.55,2.5
+norfolk_va,3100,8,245000,0.5,0.48,1.5

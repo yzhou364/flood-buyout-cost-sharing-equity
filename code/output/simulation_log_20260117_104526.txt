@@ -1,0 +1,84 @@
+[2026-01-17 10:45:26] INFO: ======================================================================
+[2026-01-17 10:45:26] INFO: FLOOD BUYOUT SIMULATION - STARTING
+[2026-01-17 10:45:26] INFO: Mode: multi-region
+[2026-01-17 10:45:26] INFO: Save results: True
+[2026-01-17 10:45:26] INFO: ======================================================================
+[2026-01-17 10:45:26] INFO: ======================================================================
+[2026-01-17 10:45:26] INFO: STARTING MULTI-REGION SIMULATION
+[2026-01-17 10:45:26] INFO: ======================================================================
+[2026-01-17 10:45:26] INFO: ============================================================
+[2026-01-17 10:45:26] INFO: PHASE 1: Creating Regional Populations
+[2026-01-17 10:45:26] INFO: ============================================================
+[2026-01-17 10:45:26] INFO: Region 1/9: Brooklyn Ny
+[2026-01-17 10:45:26] INFO:   Creating population for Brooklyn Ny...
+[2026-01-17 10:45:26] INFO:     Done: 1,143 households in 3 jurisdictions (0.01s)
+[2026-01-17 10:45:26] INFO: Region 2/9: Staten Island Ny
+[2026-01-17 10:45:26] INFO:   Creating population for Staten Island Ny...
+[2026-01-17 10:45:26] INFO:     Done: 2,850 households in 6 jurisdictions (0.03s)
+[2026-01-17 10:45:26] INFO: Region 3/9: Queens Ny
+[2026-01-17 10:45:26] INFO:   Creating population for Queens Ny...
+[2026-01-17 10:45:26] INFO:     Done: 3,199 households in 7 jurisdictions (0.03s)
+[2026-01-17 10:45:26] INFO: Region 4/9: Lower Manhattan Ny
+[2026-01-17 10:45:26] INFO:   Creating population for Lower Manhattan Ny...
+[2026-01-17 10:45:26] INFO:     Done: 1,498 households in 7 jurisdictions (0.02s)
+[2026-01-17 10:45:26] INFO: Region 5/9: Houston Tx
+[2026-01-17 10:45:26] INFO:   Creating population for Houston Tx...
+[2026-01-17 10:45:26] INFO:     Done: 8,496 households in 12 jurisdictions (0.09s)
+[2026-01-17 10:45:26] INFO: Region 6/9: New Orleans La
+[2026-01-17 10:45:26] INFO:   Creating population for New Orleans La...
+[2026-01-17 10:45:26] INFO:     Done: 5,400 households in 12 jurisdictions (0.06s)
+[2026-01-17 10:45:26] INFO: Region 7/9: Miami Dade Fl
+[2026-01-17 10:45:26] INFO:   Creating population for Miami Dade Fl...
+[2026-01-17 10:45:26] INFO:     Done: 6,192 households in 12 jurisdictions (0.07s)
+[2026-01-17 10:45:26] INFO: Region 8/9: Charleston Sc
+[2026-01-17 10:45:26] INFO:   Creating population for Charleston Sc...
+[2026-01-17 10:45:26] INFO:     Done: 2,597 households in 7 jurisdictions (0.03s)
+[2026-01-17 10:45:26] INFO: Region 9/9: Norfolk Va
+[2026-01-17 10:45:26] INFO:   Creating population for Norfolk Va...
+[2026-01-17 10:45:26] INFO:     Done: 3,096 households in 8 jurisdictions (0.03s)
+[2026-01-17 10:45:26] INFO: ------------------------------------------------------------
+[2026-01-17 10:45:26] INFO: Population creation complete: 34,471 households in 0.37s
+[2026-01-17 10:45:26] INFO: ============================================================
+[2026-01-17 10:45:26] INFO: ============================================================
+[2026-01-17 10:45:26] INFO: PHASE 2: Initializing Models
+[2026-01-17 10:45:26] INFO: ============================================================
+[2026-01-17 10:45:26] INFO: Creating climate scenarios (IPCC SROCC)...
+[2026-01-17 10:45:26] INFO: Initializing flood risk model (USACE depth-damage)...
+[2026-01-17 10:45:26] INFO: Building homeowner decision model...
+[2026-01-17 10:45:26] INFO: Building local government model...
+[2026-01-17 10:45:26] INFO: Initializing federal optimizer...
+[2026-01-17 10:45:26] INFO: Model initialization complete (0.00s)
+[2026-01-17 10:45:26] INFO: ============================================================
+[2026-01-17 10:45:26] INFO: ============================================================
+[2026-01-17 10:45:26] INFO: PHASE 3: Policy Analysis
+[2026-01-17 10:45:26] INFO: ============================================================
+[2026-01-17 10:45:26] INFO: Evaluating policy alpha=50% (1/9)...
+[2026-01-17 10:48:03] INFO:   alpha=50%: 205 relocations, RRG=0.009 (157.20s)
+[2026-01-17 10:48:03] INFO: Evaluating policy alpha=60% (2/9)...
+[2026-01-17 10:48:09] INFO:   alpha=60%: 335 relocations, RRG=0.057 (6.19s)
+[2026-01-17 10:48:09] INFO: Evaluating policy alpha=70% (3/9)...
+[2026-01-17 10:48:16] INFO:   alpha=70%: 624 relocations, RRG=0.127 (6.17s)
+[2026-01-17 10:48:16] INFO: Evaluating policy alpha=75% (4/9)...
+[2026-01-17 10:48:22] INFO:   alpha=75%: 884 relocations, RRG=0.261 (6.07s)
+[2026-01-17 10:48:22] INFO: Evaluating policy alpha=80% (5/9)...
+[2026-01-17 10:48:28] INFO:   alpha=80%: 1,249 relocations, RRG=0.388 (6.11s)
+[2026-01-17 10:48:28] INFO: Evaluating policy alpha=85% (6/9)...
+[2026-01-17 10:48:34] INFO:   alpha=85%: 2,150 relocations, RRG=0.705 (6.10s)
+[2026-01-17 10:48:34] INFO: Evaluating policy alpha=90% (7/9)...
+[2026-01-17 10:48:40] INFO:   alpha=90%: 3,032 relocations, RRG=0.872 (6.05s)
+[2026-01-17 10:48:40] INFO: Evaluating policy alpha=95% (8/9)...
+[2026-01-17 10:48:46] INFO:   alpha=95%: 3,294 relocations, RRG=0.935 (6.08s)
+[2026-01-17 10:48:46] INFO: Evaluating policy alpha=100% (9/9)...
+[2026-01-17 10:48:52] INFO:   alpha=100%: 3,294 relocations, RRG=0.935 (5.94s)
+[2026-01-17 10:48:52] INFO: ============================================================
+[2026-01-17 10:48:52] INFO: MULTI-REGION SIMULATION COMPLETE
+[2026-01-17 10:48:52] INFO: Total time: 206.30s (3.4 minutes)
+[2026-01-17 10:48:52] INFO: Regions: 9, Households: 34,471
+[2026-01-17 10:48:52] INFO: Optimal alpha: 85%
+[2026-01-17 10:48:52] INFO: ============================================================
+[2026-01-17 10:48:52] INFO: Saving multi-region results...
+[2026-01-17 10:48:52] INFO: ======================================================================
+[2026-01-17 10:48:52] INFO: ALL SIMULATIONS COMPLETE
+[2026-01-17 10:48:52] INFO: Total execution time: 206.32s (3.4 minutes)
+[2026-01-17 10:48:52] INFO: Results saved to: code/output/
+[2026-01-17 10:48:52] INFO: ======================================================================

@@ -1,0 +1,133 @@
+\begin{thebibliography}{17}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Siders et~al.(2019)Siders, Hino, and Mach]{siders2019strategic}
+A.~R. Siders, Miyuki Hino, and Katharine~J. Mach.
+\newblock The case for strategic and managed climate retreat.
+\newblock \emph{Science}, 365\penalty0 (6455):\penalty0 761--763, 2019.
+\newblock \doi{10.1126/science.aax8346}.
+
+\bibitem[Mach et~al.(2019)Mach, Kraan, Hino, Siders, Johnston, and
+  Field]{mach2019managed}
+Katharine~J. Mach, Caroline~M. Kraan, Miyuki Hino, A.~R. Siders, Erica~M.
+  Johnston, and Christopher~B. Field.
+\newblock Managed retreat through voluntary buyouts of flood-prone properties.
+\newblock \emph{Science Advances}, 5\penalty0 (10):\penalty0 eaax8995, 2019.
+\newblock \doi{10.1126/sciadv.aax8995}.
+
+\bibitem[Elliott et~al.(2021)Elliott, Brown, and Loughran]{elliott2021racial}
+James~R. Elliott, Phylicia~Lee Brown, and Kevin Loughran.
+\newblock Racial inequities in the federal buyout of flood-prone homes: A
+  nationwide assessment of environmental adaptation.
+\newblock \emph{Socius}, 6:\penalty0 1--15, 2021.
+\newblock \doi{10.1177/2378023120905439}.
+
+\bibitem[Greer and Binder(2017)]{greer2021political}
+Alex Greer and Sherri~Brokopp Binder.
+\newblock A historical assessment of home buyout policy: Are we learning or
+  just failing?
+\newblock \emph{Housing Policy Debate}, 27\penalty0 (3):\penalty0 372--392,
+  2017.
+\newblock \doi{10.1080/10511482.2016.1245209}.
+
+\bibitem[Bier et~al.(2019)Bier, Zhou, and Du]{bier2019game}
+Vicki~M. Bier, Yuqun Zhou, and Hongqiao Du.
+\newblock Game-theoretic modeling of pre-disaster relocation.
+\newblock \emph{The Engineering Economist}, 65\penalty0 (2):\penalty0 89--113,
+  2019.
+\newblock \doi{10.1080/0013791X.2019.1677835}.
+
+\bibitem[Warner and Pleeter(2001)]{warner2001personal}
+John~T. Warner and Saul Pleeter.
+\newblock The personal discount rate: Evidence from military downsizing
+  programs.
+\newblock \emph{American Economic Review}, 91\penalty0 (1):\penalty0 33--53,
+  2001.
+\newblock \doi{10.1257/aer.91.1.33}.
+
+\bibitem[Hausman(1979)]{hausman1979individual}
+Jerry~A. Hausman.
+\newblock Individual discount rates and the purchase and utilization of
+  energy-using durables.
+\newblock \emph{Bell Journal of Economics}, 10\penalty0 (1):\penalty0 33--54,
+  1979.
+\newblock \doi{10.2307/3003318}.
+
+\bibitem[Frederick et~al.(2002)Frederick, Loewenstein, and
+  O'Donoghue]{frederick2002time}
+Shane Frederick, George Loewenstein, and Ted O'Donoghue.
+\newblock Time discounting and time preference: A critical review.
+\newblock \emph{Journal of Economic Literature}, 40\penalty0 (2):\penalty0
+  351--401, 2002.
+\newblock \doi{10.1257/jel.40.2.351}.
+
+\bibitem[Banzhaf et~al.(2019)Banzhaf, Ma, and
+  Timmins]{banzhaf2019environmental}
+Spencer Banzhaf, Lala Ma, and Christopher Timmins.
+\newblock Environmental justice: The economics of race, place, and pollution.
+\newblock \emph{Journal of Economic Perspectives}, 33\penalty0 (1):\penalty0
+  185--208, 2019.
+\newblock \doi{10.1257/jep.33.1.185}.
+
+\bibitem[Binder and Greer(2016)]{binder2015framework}
+Sherri~Brokopp Binder and Alex Greer.
+\newblock The devil is in the details: Linking home buyout policy, practice,
+  and experience after {Hurricane Sandy}.
+\newblock \emph{Politics and Governance}, 4\penalty0 (4):\penalty0 97--106,
+  2016.
+\newblock \doi{10.17645/pag.v4i4.738}.
+
+\bibitem[Bullard and Wright(2005)]{bullard2007toxic}
+Robert~D. Bullard and Beverly Wright.
+\newblock The quest for environmental justice: Human rights and the politics of
+  pollution.
+\newblock \emph{Sierra Club Books}, 2005.
+
+\bibitem[Samuelson and Zeckhauser(1988)]{samuelson1988status}
+William Samuelson and Richard Zeckhauser.
+\newblock Status quo bias in decision making.
+\newblock \emph{Journal of Risk and Uncertainty}, 1\penalty0 (1):\penalty0
+  7--59, 1988.
+\newblock \doi{10.1007/BF00055564}.
+
+\bibitem[Meyer and Kunreuther(2017)]{meyer2017ostrich}
+Robert Meyer and Howard Kunreuther.
+\newblock \emph{The Ostrich Paradox: Why We Underprepare for Disasters}.
+\newblock Wharton School Press, Philadelphia, 2017.
+
+\bibitem[{IPCC}(2019)]{ipcc2019srocc}
+{IPCC}.
+\newblock Special report on the ocean and cryosphere in a changing climate.
+\newblock Technical report, Intergovernmental Panel on Climate Change, Geneva,
+  2019.
+
+\bibitem[Buchanan et~al.(2016)Buchanan, Kopp, Oppenheimer, and
+  Tebaldi]{buchanan2016allowances}
+Maya~K. Buchanan, Robert~E. Kopp, Michael Oppenheimer, and Claudia Tebaldi.
+\newblock Allowances for evolving coastal flood risk under uncertain local
+  sea-level rise.
+\newblock \emph{Climatic Change}, 137\penalty0 (3-4):\penalty0 347--362, 2016.
+\newblock \doi{10.1007/s10584-016-1664-7}.
+
+\bibitem[{U.S. Army Corps of Engineers}(1992)]{usace1992depth}
+{U.S. Army Corps of Engineers}.
+\newblock Guidelines for risk and uncertainty analysis in water resources
+  planning.
+\newblock Technical Report IWR Report 92-R-1, Institute for Water Resources,
+  Fort Belvoir, VA, 1992.
+
+\bibitem[Wing et~al.(2018)Wing, Bates, Smith, Sampson, Johnson, Fargione, and
+  Morefield]{wing2018estimates}
+Oliver E.~J. Wing, Paul~D. Bates, Andrew~M. Smith, Christopher~C. Sampson,
+  Kris~A. Johnson, Joseph Fargione, and Philip Morefield.
+\newblock Estimates of present and future flood risk in the conterminous
+  {United States}.
+\newblock \emph{Environmental Research Letters}, 13\penalty0 (3):\penalty0
+  034023, 2018.
+\newblock \doi{10.1088/1748-9326/aaac65}.
+
+\end{thebibliography}

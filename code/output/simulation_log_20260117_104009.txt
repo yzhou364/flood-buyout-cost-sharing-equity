@@ -1,0 +1,42 @@
+[2026-01-17 10:40:09] INFO: ======================================================================
+[2026-01-17 10:40:09] INFO: FLOOD BUYOUT SIMULATION - STARTING
+[2026-01-17 10:40:09] INFO: Mode: brooklyn
+[2026-01-17 10:40:09] INFO: Save results: True
+[2026-01-17 10:40:09] INFO: ======================================================================
+[2026-01-17 10:40:09] INFO: ============================================================
+[2026-01-17 10:40:09] INFO: STARTING BROOKLYN CASE STUDY SIMULATION
+[2026-01-17 10:40:09] INFO: ============================================================
+[2026-01-17 10:40:09] INFO: PHASE 1: Creating Brooklyn Population
+[2026-01-17 10:40:09] INFO: Creating climate scenarios (IPCC SROCC)...
+[2026-01-17 10:40:09] INFO: Creating Brooklyn population...
+[2026-01-17 10:40:09] INFO: Created 1,143 households in 0.01s
+[2026-01-17 10:40:09] INFO: PHASE 2: Initializing Models
+[2026-01-17 10:40:09] INFO: Initializing flood risk model...
+[2026-01-17 10:40:09] INFO: Building homeowner decision model...
+[2026-01-17 10:40:09] INFO: Building local government model...
+[2026-01-17 10:40:09] INFO: Initializing federal optimizer...
+[2026-01-17 10:40:09] INFO: Model initialization complete
+[2026-01-17 10:40:09] INFO: PHASE 3: Policy Analysis
+[2026-01-17 10:40:09] INFO: Evaluating current FEMA policy (α=75%)...
+[2026-01-17 10:40:15] INFO: Current policy: 0 relocations, RRG=1.000
+[2026-01-17 10:40:15] INFO: Comparing 9 different cost-share ratios...
+[2026-01-17 10:40:15] INFO:   α=50% (1/9): 0 relocations, RRG=1.000 (0.17s)
+[2026-01-17 10:40:15] INFO:   α=60% (2/9): 0 relocations, RRG=1.000 (0.17s)
+[2026-01-17 10:40:15] INFO:   α=70% (3/9): 0 relocations, RRG=1.000 (0.17s)
+[2026-01-17 10:40:15] INFO:   α=75% (4/9): 0 relocations, RRG=1.000 (0.17s)
+[2026-01-17 10:40:16] INFO:   α=80% (5/9): 0 relocations, RRG=1.000 (0.17s)
+[2026-01-17 10:40:16] INFO:   α=85% (6/9): 0 relocations, RRG=1.000 (0.17s)
+[2026-01-17 10:40:16] INFO:   α=90% (7/9): 0 relocations, RRG=1.000 (0.17s)
+[2026-01-17 10:40:16] INFO:   α=95% (8/9): 0 relocations, RRG=1.000 (0.17s)
+[2026-01-17 10:40:16] INFO:   α=100% (9/9): 0 relocations, RRG=1.000 (0.17s)
+[2026-01-17 10:40:17] INFO: ============================================================
+[2026-01-17 10:40:17] INFO: BROOKLYN SIMULATION COMPLETE
+[2026-01-17 10:40:17] INFO: Total time: 7.98s
+[2026-01-17 10:40:17] INFO: Optimal α: 50%
+[2026-01-17 10:40:17] INFO: ============================================================
+[2026-01-17 10:40:17] INFO: Saving Brooklyn results...
+[2026-01-17 10:40:17] INFO: ======================================================================
+[2026-01-17 10:40:17] INFO: ALL SIMULATIONS COMPLETE
+[2026-01-17 10:40:17] INFO: Total execution time: 7.99s (0.1 minutes)
+[2026-01-17 10:40:17] INFO: Results saved to: code/output/
+[2026-01-17 10:40:17] INFO: ======================================================================

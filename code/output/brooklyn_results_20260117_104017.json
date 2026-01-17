@@ -1,0 +1,138 @@
+{
+  "timestamp": "20260117_104017",
+  "optimal_alpha": 0.5,
+  "results_by_alpha": [
+    {
+      "alpha": 0.5,
+      "max_subsidy": 250000,
+      "total_federal_cost": 0,
+      "total_relocations": 0,
+      "low_income_relocations": 0,
+      "high_income_relocations": 0,
+      "participating_jurisdictions": 0,
+      "free_riders": 0,
+      "equity_ratio": 1.0,
+      "jurisdiction_details": []
+    },
+    {
+      "alpha": 0.6,
+      "max_subsidy": 250000,
+      "total_federal_cost": 0,
+      "total_relocations": 0,
+      "low_income_relocations": 0,
+      "high_income_relocations": 0,
+      "participating_jurisdictions": 0,
+      "free_riders": 0,
+      "equity_ratio": 1.0,
+      "jurisdiction_details": []
+    },
+    {
+      "alpha": 0.7,
+      "max_subsidy": 250000,
+      "total_federal_cost": 0,
+      "total_relocations": 0,
+      "low_income_relocations": 0,
+      "high_income_relocations": 0,
+      "participating_jurisdictions": 0,
+      "free_riders": 0,
+      "equity_ratio": 1.0,
+      "jurisdiction_details": []
+    },
+    {
+      "alpha": 0.75,
+      "max_subsidy": 250000,
+      "total_federal_cost": 0,
+      "total_relocations": 0,
+      "low_income_relocations": 0,
+      "high_income_relocations": 0,
+      "participating_jurisdictions": 0,
+      "free_riders": 0,
+      "equity_ratio": 1.0,
+      "jurisdiction_details": []
+    },
+    {
+      "alpha": 0.8,
+      "max_subsidy": 250000,
+      "total_federal_cost": 0,
+      "total_relocations": 0,
+      "low_income_relocations": 0,
+      "high_income_relocations": 0,
+      "participating_jurisdictions": 0,
+      "free_riders": 0,
+      "equity_ratio": 1.0,
+      "jurisdiction_details": []
+    },
+    {
+      "alpha": 0.85,
+      "max_subsidy": 250000,
+      "total_federal_cost": 0,
+      "total_relocations": 0,
+      "low_income_relocations": 0,
+      "high_income_relocations": 0,
+      "participating_jurisdictions": 0,
+      "free_riders": 0,
+      "equity_ratio": 1.0,
+      "jurisdiction_details": []
+    },
+    {
+      "alpha": 0.9,
+      "max_subsidy": 250000,
+      "total_federal_cost": 0,
+      "total_relocations": 0,
+      "low_income_relocations": 0,
+      "high_income_relocations": 0,
+      "participating_jurisdictions": 0,
+      "free_riders": 0,
+      "equity_ratio": 1.0,
+      "jurisdiction_details": []
+    },
+    {
+      "alpha": 0.95,
+      "max_subsidy": 250000,
+      "total_federal_cost": 0,
+      "total_relocations": 0,
+      "low_income_relocations": 0,
+      "high_income_relocations": 0,
+      "participating_jurisdictions": 0,
+      "free_riders": 0,
+      "equity_ratio": 1.0,
+      "jurisdiction_details": []
+    },
+    {
+      "alpha": 1.0,
+      "max_subsidy": 250000,
+      "total_federal_cost": 0,
+      "total_relocations": 0,
+      "low_income_relocations": 0,
+      "high_income_relocations": 0,
+      "participating_jurisdictions": 0,
+      "free_riders": 0,
+      "equity_ratio": 1.0,
+      "jurisdiction_details": []
+    }
+  ],
+  "optimal_outcome": {
+    "alpha": 0.5,
+    "max_subsidy": 250000,
+    "total_federal_cost": 0,
+    "total_relocations": 0,
+    "low_income_relocations": 0,
+    "high_income_relocations": 0,
+    "participating_jurisdictions": 0,
+    "free_riders": 0,
+    "equity_ratio": 1.0,
+    "jurisdiction_details": []
+  },
+  "current_policy": {
+    "alpha": 0.75,
+    "max_subsidy": 250000,
+    "total_federal_cost": 0,
+    "total_relocations": 0,
+    "low_income_relocations": 0,
+    "high_income_relocations": 0,
+    "participating_jurisdictions": 0,
+    "free_riders": 0,
+    "equity_ratio": 1.0,
+    "jurisdiction_details": []
+  }
+}

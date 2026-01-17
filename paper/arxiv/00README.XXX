@@ -1,0 +1,22 @@
+This submission contains a single LaTeX source file (main.tex) with embedded
+bibliography and five PDF figure files in the figures/ subdirectory.
+
+Compilation:
+  pdflatex main.tex
+  pdflatex main.tex
+
+The bibliography is embedded directly in main.tex (no separate .bib file needed).
+
+Files included:
+  main.tex                           - Main LaTeX source (self-contained)
+  figures/fig1_equity_vs_alpha.pdf   - Figure 1
+  figures/fig2_relocation_by_income.pdf - Figure 2
+  figures/fig3_regional_heterogeneity.pdf - Figure 3
+  figures/fig4_policy_comparison.pdf - Figure 4
+  figures/fig6_game_structure.pdf    - Figure 5 (game structure)
+
+Required packages (all standard in TeX Live):
+  amsmath, amssymb, amsthm, graphicx, booktabs, natbib, geometry,
+  hyperref, xcolor, float, subcaption, setspace, mathptmx
+
+Recommended TeX Live version: 2023 or 2025

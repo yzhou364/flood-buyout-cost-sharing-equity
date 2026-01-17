@@ -1,0 +1,116 @@
+[2026-01-17 10:51:43] INFO: ======================================================================
+[2026-01-17 10:51:43] INFO: FLOOD BUYOUT SIMULATION - STARTING
+[2026-01-17 10:51:43] INFO: Mode: all
+[2026-01-17 10:51:43] INFO: Save results: True
+[2026-01-17 10:51:43] INFO: ======================================================================
+[2026-01-17 10:51:43] INFO: ============================================================
+[2026-01-17 10:51:43] INFO: STARTING BROOKLYN CASE STUDY SIMULATION
+[2026-01-17 10:51:43] INFO: ============================================================
+[2026-01-17 10:51:43] INFO: PHASE 1: Creating Brooklyn Population
+[2026-01-17 10:51:43] INFO: Creating climate scenarios (IPCC SROCC)...
+[2026-01-17 10:51:43] INFO: Creating Brooklyn population...
+[2026-01-17 10:51:43] INFO: Created 1,143 households in 0.02s
+[2026-01-17 10:51:43] INFO: PHASE 2: Initializing Models
+[2026-01-17 10:51:43] INFO: Initializing flood risk model...
+[2026-01-17 10:51:43] INFO: Building homeowner decision model...
+[2026-01-17 10:51:43] INFO: Building local government model...
+[2026-01-17 10:51:43] INFO: Initializing federal optimizer...
+[2026-01-17 10:51:43] INFO: Model initialization complete
+[2026-01-17 10:51:43] INFO: PHASE 3: Policy Analysis
+[2026-01-17 10:51:43] INFO: Evaluating current FEMA policy (alpha=75%)...
+[2026-01-17 10:51:48] INFO: Current policy: 0 relocations, RRG=1.000
+[2026-01-17 10:51:48] INFO: Comparing 9 different cost-share ratios...
+[2026-01-17 10:51:49] INFO:   alpha=50% (1/9): 0 relocations, RRG=1.000 (0.17s)
+[2026-01-17 10:51:49] INFO:   alpha=60% (2/9): 0 relocations, RRG=1.000 (0.18s)
+[2026-01-17 10:51:49] INFO:   alpha=70% (3/9): 0 relocations, RRG=1.000 (0.19s)
+[2026-01-17 10:51:49] INFO:   alpha=75% (4/9): 0 relocations, RRG=1.000 (0.18s)
+[2026-01-17 10:51:49] INFO:   alpha=80% (5/9): 0 relocations, RRG=1.000 (0.17s)
+[2026-01-17 10:51:49] INFO:   alpha=85% (6/9): 0 relocations, RRG=1.000 (0.18s)
+[2026-01-17 10:51:50] INFO:   alpha=90% (7/9): 0 relocations, RRG=1.000 (0.17s)
+[2026-01-17 10:51:50] INFO:   alpha=95% (8/9): 0 relocations, RRG=1.000 (0.17s)
+[2026-01-17 10:51:50] INFO:   alpha=100% (9/9): 0 relocations, RRG=1.000 (0.17s)
+[2026-01-17 10:51:51] INFO: ============================================================
+[2026-01-17 10:51:51] INFO: BROOKLYN SIMULATION COMPLETE
+[2026-01-17 10:51:51] INFO: Total time: 8.00s
+[2026-01-17 10:51:51] INFO: Optimal alpha: 50%
+[2026-01-17 10:51:51] INFO: ============================================================
+[2026-01-17 10:51:51] INFO: ======================================================================
+[2026-01-17 10:51:51] INFO: STARTING MULTI-REGION SIMULATION
+[2026-01-17 10:51:51] INFO: ======================================================================
+[2026-01-17 10:51:51] INFO: ============================================================
+[2026-01-17 10:51:51] INFO: PHASE 1: Creating Regional Populations
+[2026-01-17 10:51:51] INFO: ============================================================
+[2026-01-17 10:51:51] INFO: Region 1/9: Brooklyn Ny
+[2026-01-17 10:51:51] INFO:   Creating population for Brooklyn Ny...
+[2026-01-17 10:51:51] INFO:     Done: 1,143 households in 3 jurisdictions (0.02s)
+[2026-01-17 10:51:51] INFO: Region 2/9: Staten Island Ny
+[2026-01-17 10:51:51] INFO:   Creating population for Staten Island Ny...
+[2026-01-17 10:51:51] INFO:     Done: 2,850 households in 6 jurisdictions (0.03s)
+[2026-01-17 10:51:51] INFO: Region 3/9: Queens Ny
+[2026-01-17 10:51:51] INFO:   Creating population for Queens Ny...
+[2026-01-17 10:51:51] INFO:     Done: 3,199 households in 7 jurisdictions (0.04s)
+[2026-01-17 10:51:51] INFO: Region 4/9: Lower Manhattan Ny
+[2026-01-17 10:51:51] INFO:   Creating population for Lower Manhattan Ny...
+[2026-01-17 10:51:51] INFO:     Done: 1,498 households in 7 jurisdictions (0.02s)
+[2026-01-17 10:51:51] INFO: Region 5/9: Houston Tx
+[2026-01-17 10:51:51] INFO:   Creating population for Houston Tx...
+[2026-01-17 10:51:51] INFO:     Done: 8,496 households in 12 jurisdictions (0.09s)
+[2026-01-17 10:51:51] INFO: Region 6/9: New Orleans La
+[2026-01-17 10:51:51] INFO:   Creating population for New Orleans La...
+[2026-01-17 10:51:51] INFO:     Done: 5,400 households in 12 jurisdictions (0.06s)
+[2026-01-17 10:51:51] INFO: Region 7/9: Miami Dade Fl
+[2026-01-17 10:51:51] INFO:   Creating population for Miami Dade Fl...
+[2026-01-17 10:51:51] INFO:     Done: 6,192 households in 12 jurisdictions (0.07s)
+[2026-01-17 10:51:51] INFO: Region 8/9: Charleston Sc
+[2026-01-17 10:51:51] INFO:   Creating population for Charleston Sc...
+[2026-01-17 10:51:51] INFO:     Done: 2,597 households in 7 jurisdictions (0.03s)
+[2026-01-17 10:51:51] INFO: Region 9/9: Norfolk Va
+[2026-01-17 10:51:51] INFO:   Creating population for Norfolk Va...
+[2026-01-17 10:51:51] INFO:     Done: 3,096 households in 8 jurisdictions (0.03s)
+[2026-01-17 10:51:51] INFO: ------------------------------------------------------------
+[2026-01-17 10:51:51] INFO: Population creation complete: 34,471 households in 0.39s
+[2026-01-17 10:51:51] INFO: ============================================================
+[2026-01-17 10:51:51] INFO: ============================================================
+[2026-01-17 10:51:51] INFO: PHASE 2: Initializing Models
+[2026-01-17 10:51:51] INFO: ============================================================
+[2026-01-17 10:51:51] INFO: Creating climate scenarios (IPCC SROCC)...
+[2026-01-17 10:51:51] INFO: Initializing flood risk model (USACE depth-damage)...
+[2026-01-17 10:51:51] INFO: Building homeowner decision model...
+[2026-01-17 10:51:51] INFO: Building local government model...
+[2026-01-17 10:51:51] INFO: Initializing federal optimizer...
+[2026-01-17 10:51:51] INFO: Model initialization complete (0.00s)
+[2026-01-17 10:51:51] INFO: ============================================================
+[2026-01-17 10:51:51] INFO: ============================================================
+[2026-01-17 10:51:51] INFO: PHASE 3: Policy Analysis
+[2026-01-17 10:51:51] INFO: ============================================================
+[2026-01-17 10:51:51] INFO: Evaluating policy alpha=50% (1/9)...
+[2026-01-17 10:54:06] INFO:   alpha=50%: 196 relocations, RRG=0.005 (135.32s)
+[2026-01-17 10:54:06] INFO: Evaluating policy alpha=60% (2/9)...
+[2026-01-17 10:54:12] INFO:   alpha=60%: 329 relocations, RRG=0.027 (5.35s)
+[2026-01-17 10:54:12] INFO: Evaluating policy alpha=70% (3/9)...
+[2026-01-17 10:54:17] INFO:   alpha=70%: 588 relocations, RRG=0.155 (5.52s)
+[2026-01-17 10:54:17] INFO: Evaluating policy alpha=75% (4/9)...
+[2026-01-17 10:54:23] INFO:   alpha=75%: 777 relocations, RRG=0.247 (5.48s)
+[2026-01-17 10:54:23] INFO: Evaluating policy alpha=80% (5/9)...
+[2026-01-17 10:54:28] INFO:   alpha=80%: 1,519 relocations, RRG=0.545 (5.37s)
+[2026-01-17 10:54:28] INFO: Evaluating policy alpha=85% (6/9)...
+[2026-01-17 10:54:34] INFO:   alpha=85%: 2,245 relocations, RRG=0.753 (5.39s)
+[2026-01-17 10:54:34] INFO: Evaluating policy alpha=90% (7/9)...
+[2026-01-17 10:54:39] INFO:   alpha=90%: 2,901 relocations, RRG=0.914 (5.46s)
+[2026-01-17 10:54:39] INFO: Evaluating policy alpha=95% (8/9)...
+[2026-01-17 10:54:45] INFO:   alpha=95%: 3,319 relocations, RRG=0.993 (5.63s)
+[2026-01-17 10:54:45] INFO: Evaluating policy alpha=100% (9/9)...
+[2026-01-17 10:54:50] INFO:   alpha=100%: 3,319 relocations, RRG=0.993 (5.66s)
+[2026-01-17 10:54:50] INFO: ============================================================
+[2026-01-17 10:54:50] INFO: MULTI-REGION SIMULATION COMPLETE
+[2026-01-17 10:54:50] INFO: Total time: 179.60s (3.0 minutes)
+[2026-01-17 10:54:50] INFO: Regions: 9, Households: 34,471
+[2026-01-17 10:54:50] INFO: Optimal alpha: 85%
+[2026-01-17 10:54:50] INFO: ============================================================
+[2026-01-17 10:54:50] INFO: Saving all results to files...
+[2026-01-17 10:54:50] INFO: All results saved successfully
+[2026-01-17 10:54:50] INFO: ======================================================================
+[2026-01-17 10:54:50] INFO: ALL SIMULATIONS COMPLETE
+[2026-01-17 10:54:50] INFO: Total execution time: 187.65s (3.1 minutes)
+[2026-01-17 10:54:50] INFO: Results saved to: code/output/
+[2026-01-17 10:54:50] INFO: ======================================================================
