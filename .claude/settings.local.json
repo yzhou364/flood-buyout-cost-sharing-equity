@@ -8,7 +8,11 @@
       "Bash(pip install:*)",
       "Bash(pdflatex:*)",
       "Bash(bibtex:*)",
-      "Bash(zip:*)"
+      "Bash(zip:*)",
+      "Bash(grep:*)",
+      "Bash(powershell -Command:*)",
+      "Bash(pip show:*)",
+      "Bash(if not exist \"D:\\\\Github\\\\Equity-Implications-of-Federal-Local-Cost-sharing-in-Flood-Buyouts\\\\paper\\\\JFRM\" mkdir \"D:\\\\Github\\\\Equity-Implications-of-Federal-Local-Cost-sharing-in-Flood-Buyouts\\\\paper\\\\JFRM\")"
     ]
   }
 }

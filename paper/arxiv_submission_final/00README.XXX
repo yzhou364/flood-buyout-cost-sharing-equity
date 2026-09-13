@@ -1,0 +1,32 @@
+This submission contains a single LaTeX source file (main.tex) with embedded
+bibliography and five PDF figure files in the figures/ subdirectory.
+
+Compilation:
+  pdflatex main.tex
+  pdflatex main.tex
+
+The bibliography is embedded directly in main.tex (no separate .bib file needed).
+
+Files included:
+  main.tex                             - Main LaTeX source (self-contained)
+  figures/fig1_equity_vs_alpha.pdf     - Figure 1: Equity vs federal cost-share
+  figures/fig2_relocation_by_income.pdf - Figure 2: Relocations by income group
+  figures/fig3_regional_heterogeneity.pdf - Figure 3: Regional heterogeneity
+  figures/fig4_policy_comparison.pdf   - Figure 4: Policy alternatives comparison
+  figures/fig6_game_structure.pdf      - Figure 5: Game structure diagram
+
+Required packages (all standard in TeX Live):
+  amsmath, amssymb, amsthm, graphicx, booktabs, natbib, geometry,
+  hyperref, xcolor, float, subcaption, setspace, mathptmx, algorithm,
+  algpseudocode
+
+Recommended TeX Live version: 2023 or later
+
+IMPORTANT REVISIONS IN THIS VERSION:
+- Corrected citation years: Elliott et al. (2020), Greer & Binder (2017),
+  Binder & Greer (2016), Bullard (2005)
+- Updated author affiliation: Department of Industrial Engineering
+- Standardized American English spelling throughout
+- Improved academic writing style per journal standards
+- Enhanced clarity and readability of abstract and introduction
+- All figures verified for quality and resolution
